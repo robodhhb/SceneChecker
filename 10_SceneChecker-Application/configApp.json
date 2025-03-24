@@ -1,0 +1,7 @@
+{
+    "threshold": "0.15",
+    "top_k": "10",
+    "category_allowList" : ["fork", "knife", "cup", "spoon","bowl"],
+    "default_system_prompt_path": "system_prompt.txt"
+    
+}
