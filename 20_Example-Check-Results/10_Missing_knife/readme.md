@@ -1,6 +1,6 @@
 # Beispiel: Ein Messer fehlt
 
-
+![](bildFehlendesMesser.png)
 
  ## User-prompt und Ergebnis der Überprüfung
 Liste 1:
