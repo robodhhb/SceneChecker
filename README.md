@@ -16,4 +16,4 @@ mit eventuellen Regelverletzungen. Die Regeln werden mit Hilfe des System-Prompt
 Der System-Prompt kann geändert werden, um auch andere Szenen zu überprüfen.  
 
 Die Anwendung ist im Ordner "10_SceneCHecker-Application" abgelegt. Dort befindet sich auch eine Installationsanweisung in der Datei "_readme.txt".
-Im Ordner 20_ ist der Mega_Prompt aufgelistet und in den Unterordnern befinden sich Beispiele für Überprüfungen mit ihrer Ergebnissen. 
+Im Ordner 20_Example_Check_Results ist der Mega_Prompt aufgelistet und in den Unterordnern befinden sich Beispiele für Überprüfungen mit ihrer Ergebnissen. 
