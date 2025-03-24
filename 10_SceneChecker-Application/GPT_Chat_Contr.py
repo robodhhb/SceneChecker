@@ -112,7 +112,6 @@ class GPT_Chat_Contr:
             ],
             temperature= self.temperature
         )
-        #noch verlauf löschen
         return completion
     
     # Access the message result of a completion object 
