@@ -1,68 +1,72 @@
-# Beispiel: Ein Messer fehlt
+# Beispiel: Ein Spoon liegt falsch, ein Bowl fehlt
 
-![](bildFehlendesMesser.png)
+![](BildSpoonBowlFehler.png)
 
  ## User-prompt und Ergebnis der Überprüfung
 Liste 1:  
-cup, (275,182,316,261), senkrecht.  
-bowl, (105,202,204,269), waagerecht.  
-fork, (48,202,88,303), senkrecht.  
-fork, (7,201,55,302), senkrecht.  
-knife, (219,212,258,307), senkrecht.
+cup, (224,150,303,232), neutral.  
+fork, (3,184,53,278), senkrecht.  
+fork, (47,176,85,264), senkrecht.  
+spoon, (83,203,161,223), waagerecht.  
+knife, (198,201,222,279), senkrecht.  
+knife, (170,187,193,280), senkrecht.  
 
 Liste 2:  
 fork: 2.  
-knife: 1.  
+knife: 2.  
 cup: 1.  
-spoon: 0.  
-bowl: 1.  
+spoon: 1.  
+bowl: 0.
 
 Überprüfung läuft....
-Lassen Sie uns die Eingabe anhand der Regeln überprüfen:
+Ich werde die Eingabe anhand der Regeln überprüfen:
 
 1. Ein knife darf nur in der rechten Bildhälfte liegen.
-   - Das knife befindet sich bei X1 = 219, was in der rechten Bildhälfte liegt. Regel nicht verletzt.
+   - Beide knifes haben X1-Koordinaten größer als 160, also in der rechten Bildhälfte. Regel nicht verletzt.
 
 2. Eine fork darf nur in der linken Bildhälfte liegen.
-   - Beide forks befinden sich bei X1 = 48 und X1 = 7, was in der linken Bildhälfte liegt. Regel nicht verletzt.
+   - Beide forks haben X1-Koordinaten kleiner oder gleich 160, also in der linken Bildhälfte. Regel nicht verletzt.
 
 3. Die Ausrichtung eines knife muss senkrecht sein.
-   - Das knife ist senkrecht ausgerichtet. Regel nicht verletzt.
+   - Beide knifes sind senkrecht ausgerichtet. Regel nicht verletzt.
 
 4. Die Ausrichtung einer fork muss senkrecht sein.
    - Beide forks sind senkrecht ausgerichtet. Regel nicht verletzt.
 
 5. Die Anzahl von forks muss gleich der Anzahl von knifes sein.
-   - Es gibt 2 forks und 1 knife. Regel verletzt.
+   - Es gibt 2 forks und 2 knifes. Regel nicht verletzt.
 
 6. Eine fork muss mindestens vorhanden sein.
    - Es sind 2 forks vorhanden. Regel nicht verletzt.
 
 7. Ein knife muss mindestens vorhanden sein.
-   - Es ist 1 knife vorhanden. Regel nicht verletzt.
+   - Es sind 2 knifes vorhanden. Regel nicht verletzt.
 
 8. Ein spoon darf in der rechten Bildhälfte oder am oberen Rand des Bildes liegen.
-   - Es gibt keinen spoon. Regel nicht verletzt.
+   - Der spoon hat eine X1-Koordinate von 83, also liegt er nicht in der rechten Bildhälfte. Er liegt auch nicht am oberen Rand, da Y1=203. Regel verletzt.
 
 9. Liegt ein spoon am oberen Rand des Bildes so muss er waagerecht liegen.
-   - Es gibt keinen spoon. Regel nicht verletzt.
+   - Nicht zutreffend, da der spoon nicht am oberen Rand liegt.
 
 10. Liegt ein spoon in der rechten Bildhälfte so muss er senkrecht liegen.
-    - Es gibt keinen spoon. Regel nicht verletzt.
+    - Nicht zutreffend, da der spoon nicht in der rechten Bildhälfte liegt.
 
 11. Die Anzahl der spoons darf höchsten 2 sein.
-    - Es gibt 0 spoons. Regel nicht verletzt.
+    - Es gibt 1 spoon. Regel nicht verletzt.
 
 12. Die Anzahl der bowls muss 1 sein.
-    - Es gibt 1 bowl. Regel nicht verletzt.
+    - Es gibt 0 bowls. Regel verletzt.
 
 13. Die X2-Koordinate eines bowl muss kleiner sein als die X1-Koordinaten der knifes.
-    - Die X2-Koordinate des bowls ist 204, was kleiner ist als die X1-Koordinate des knifes (219). Regel nicht verletzt.
+    - Nicht zutreffend, da kein bowl vorhanden ist.
 
 14. Die X1-Koordinate eines bowl muss größer sein als die X2-Koordinaten der forks.
-    - Die X1-Koordinate des bowls ist 105, was größer ist als die X2-Koordinaten der forks (88 und 55). Regel nicht verletzt.
+    - Nicht zutreffend, da kein bowl vorhanden ist.
 
 15. Ein cup darf nicht als einziges Objekt vorhanden sein.
     - Es sind mehrere Objekte vorhanden. Regel nicht verletzt.
 
-Ergebnis: Regel 5 ist verletzt. Die Anzahl von forks muss gleich der Anzahl von knifes sein.
+Ergebnis der Überprüfung:
+- Regel 8 verletzt: Ein spoon darf in der rechten Bildhälfte oder am oberen Rand des Bildes liegen.
+- Regel 12 verletzt: Die Anzahl der bowls muss 1 sein.
+
