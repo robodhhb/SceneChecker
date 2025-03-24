@@ -6,7 +6,7 @@
 #
 # File: SC_View.py
 # Author: Detlef Heinze 
-# Version: 1.0   Date: 16.03.2025   
+# Version: 1.1   Date: 24.03.2025   
 ################################################################
 
 #Imports for user interface
@@ -206,11 +206,15 @@ class SC_View(object):
         
         # Now check the scene with OpenAI GPT using the system_prompt
         # and the user_prompt
-        completion= self.gpt_chat_contr.run_prompt(user_prompt)
-        check_result= completion.choices[0].message.content
-        self.chatInOut_textWidget.insert('end', check_result)
-        self.token_label.config(text= 'Total tokens: ' + \
-                                str(completion.usage.total_tokens))
+        try:
+            completion= self.gpt_chat_contr.run_prompt(user_prompt)
+        except:
+            self.chatInOut_textWidget.insert('end', 'ERROR: GPT ist nicht erreichbar. Es könnte ein API-Key für OpenAI fehlen.')
+        else:
+            check_result= completion.choices[0].message.content
+            self.chatInOut_textWidget.insert('end', check_result)
+            self.token_label.config(text= 'Total tokens: ' + \
+                                    str(completion.usage.total_tokens))
         
         self.chatInOut_textWidget['state']= 'disabled'
         self.btnStartStop['state']= 'normal'
