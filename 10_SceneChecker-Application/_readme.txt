@@ -28,11 +28,10 @@ Die Installation der SceneChecker-Applikation besteht aus:
 
 5) Download des GitHub-Repository 
    auf dem Raspberry Pi unter dem user "pi":
-   !!!!!!!!!!!!https://github.com/robodhhb/Smart-Modelrailway-Cam 
+   https://github.com/robodhhb/SceneChecker
    mit dem grünen Knopf "code" und dann "Download zip". 
 
-6) LXTerminal öffnen und zip-Datei mit unzip in einem Ordner Ihrer Wahl entpacken
-   !!!!!!!und in den Ordner "Smart-Modelrailway-Cam" mit cd wechseln
+6) LXTerminal öffnen und zip-Datei mit unzip in einem Ordner Ihrer Wahl entpacken.
 
 7) Installation für die Objekterkennung (MediaPipe-API):
    Siehe:https:ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
@@ -51,7 +50,8 @@ Die Installation der SceneChecker-Applikation besteht aus:
 
 10) Programme starten:  
    - Python Environment aktivieren: "source appDevEnv/bin/activate" 
-   - Starten im LXTerminal mit "python3 SC_Main.py"
+   - Starten im LXTerminal mit "python3 SC_Main.py" aus dem Unterordner
+     ../10_SceneChecker-Application
     
 ------------------    
 Bekannte Probleme:
@@ -95,10 +95,10 @@ Installation steps:
 4) Activate the python environment for the following installations:
    source appDevEnv/bin/activate
 
-5) Download the GitHub-Repository: http:!!!!!!
+5) Download the GitHub-Repository: https://github.com/robodhhb/SceneChecker
    Press the green button "code" and select in the menu "Download zip". 
 
-6) Opern LXTerminal and unzip the downloaded zip file !!!
+6) Open LXTerminal and unzip the downloaded zip file.
 
 7) Install the MediaPipe-API for object-detection:
    See:https:ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
@@ -117,7 +117,8 @@ Installation steps:
 
 10) Start of the application  
    - Activate the Python Environment: "source appDevEnv/bin/activate" 
-   - Run "python3 SC_Main.py" with LXTerminal.
+   - Run "python3 SC_Main.py" with LXTerminal in the subfolder:
+     ../10_SceneChecker-Application
 
 --------------       
 Known issues:
