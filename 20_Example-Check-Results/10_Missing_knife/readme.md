@@ -3,19 +3,19 @@
 ![](bildFehlendesMesser.png)
 
  ## User-prompt und Ergebnis der Überprüfung
-Liste 1:
-cup, (275,182,316,261), senkrecht.
-bowl, (105,202,204,269), waagerecht.
-fork, (48,202,88,303), senkrecht.
-fork, (7,201,55,302), senkrecht.
+Liste 1:  
+cup, (275,182,316,261), senkrecht.  
+bowl, (105,202,204,269), waagerecht.  
+fork, (48,202,88,303), senkrecht.  
+fork, (7,201,55,302), senkrecht.  
 knife, (219,212,258,307), senkrecht.
 
-Liste 2:
-fork: 2.
-knife: 1.
-cup: 1.
-spoon: 0.
-bowl: 1.
+Liste 2:  
+fork: 2.  
+knife: 1.  
+cup: 1.  
+spoon: 0.  
+bowl: 1.  
 
 Überprüfung läuft....
 Lassen Sie uns die Eingabe anhand der Regeln überprüfen:
