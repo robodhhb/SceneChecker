@@ -11,6 +11,6 @@ Ein Überprüfung einer derartigen Szene macht ein kundiger Ausbilder in Sekunde
 Die Auszubildenden könnten dann selbst lernen. Doch wie überprüfen wir die richtige Anordnung der Objekte?
 Man könnte ein Regelwerk in Python programmieren. Doch das ist sehr aufwendig und bei Änderungen der Regeln muss ein Programmierer vor Ort sein. 
 
-Das Projekt zeigt, wie man die Regeln so definiert, das sie mit dem OpenAI GPT Chat Completions API überprüft werden können. Das API liefert eine Auswertung
+Das Projekt zeigt, wie man die Regeln so definiert, das sie mit GPT-4o über das OpenAI GPT Chat Completions API überprüft werden können. Das API liefert eine Auswertung
 mit eventuellen Regelverletzungen. Die Regeln werden mit Hilfe des System-Prompts in Form eines "Mega-Prompts" definiert.
 Der System-Prompt kann geändert werden, um auch andere Szenen zu überprüfen.  
