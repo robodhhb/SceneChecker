@@ -13,4 +13,4 @@ Man könnte ein Regelwerk in Python programmieren. Doch das ist sehr aufwendig u
 
 Das Projekt zeigt, wie man die Regeln so definiert, das sie mit dem OpenAI GPT Chat Completions API überprüft werden können. Das API liefert eine Auswertung
 mit eventuellen Regelverletzungen. Die Regeln werden mit Hilfe des System-Prompts in Form eines "Mega-Prompts" definiert.
-Der System-Prompt kann geaändert werden, um auch andere Szenen zu überprüfen.  
+Der System-Prompt kann geändert werden, um auch andere Szenen zu überprüfen.  
