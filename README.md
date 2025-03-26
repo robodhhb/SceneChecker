@@ -1,6 +1,6 @@
 # SceneChecker
 Überprüfung von Bildszenen mit Hilfe der Objekterkennung, einem Mega-Prompt und dem OpenAI GPT Chat Completions API auf dem Raspberry Pi.
-Der SceneChecker überprüft als Beispiel mit 15 Regeln den richtigen Aufbau eines Gedecks.
+Der SceneChecker überprüft als Beispiel mit 15 Regeln den richtigen Aufbau eines Gedecks. Der Scene-Checker in Aktion auf [Youtube](https://www.youtube.com/watch?v=xvB0Hm_nDxg)
 
 ![](titelKlein.png)
 
