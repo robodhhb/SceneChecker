@@ -16,7 +16,7 @@ Die Installation der SceneChecker-Applikation besteht aus:
 2) RaspberryPi starten und anmelden 
  
 3) Einrichtung eines Python Environments im home-Verzeichnis.
-   Vorschlag Benennung: appDevEnv
+   Vorschlag Benennung: "appDevEnv"
    Bei der Anlage des Environments müssen die System-Pakete mit übernommen werden:
    cd ~
    python -m venv appDevEnv --system-site-packages
@@ -34,7 +34,7 @@ Die Installation der SceneChecker-Applikation besteht aus:
 6) LXTerminal öffnen und zip-Datei mit unzip in einem Ordner Ihrer Wahl entpacken.
 
 7) Installation für die Objekterkennung (MediaPipe-API):
-   Siehe:https:ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
+   https://ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
 
 8) Beschreibung für die Nutzung des  OpenAI Chat Completions API:
    https://platform.openai.com/docs/libraries?language=python
@@ -60,9 +60,6 @@ a)  Falls das Paket "ImageTk" nicht gefunden wird, muss es noch
     sudo apt install python3-pil.imagetk
 b)  Die Fehlermeldung beim Start in der Konsole kann ignoriert werden:
     Error in cpuinfo: prctl(PR_SVE_GET_VL) failed
-
-Hinweise, Fragen, Anregungen und Ideen an:
-smrc_alert@gmx.de
     
 ========================English Version====================================
 Installation of the application "SceneChecker"
