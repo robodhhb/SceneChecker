@@ -27,7 +27,7 @@ Die Installation der SceneChecker-Applikation besteht aus:
    source appDevEnv/bin/activate
 
 5) Download des GitHub-Repository 
-   auf dem Raspberry Pi unter dem user "pi":
+   auf dem Raspberry Pi:
    https://github.com/robodhhb/SceneChecker
    mit dem grünen Knopf "code" und dann "Download zip". 
 
@@ -78,9 +78,6 @@ Installation steps:
    https://www.youtube.com/watch?v=r3tpas_fvRc
    
 2) Start Raspberry Pi and login
- 
-2) Setup  Raspberry Pi Camera V2:
-   https://projects-raspberry.com/getting-started-with-raspberry-pi-camera/
 
 3) Create a python environment in user's home directory.
    Name it: appDevEnv
@@ -98,7 +95,7 @@ Installation steps:
 6) Open LXTerminal and unzip the downloaded zip file.
 
 7) Install the MediaPipe-API for object-detection:
-   See:https:ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
+   https://ai.google.dev/edge/mediapipe/solutions/setup_python?hl=de
 
 8) Manual for the use of the OpenAI Chat Completions API:
    https://platform.openai.com/docs/libraries?language=python
