@@ -31,7 +31,7 @@ class CamState(enum.Enum):
 #The window class of the application
 class SC_View(object):
 
-    #Initialize a new SMRC_View
+    #Initialize a new SC_View
     def __init__(self, master):
         self.master = master
         self.master.geometry('1300x600')
